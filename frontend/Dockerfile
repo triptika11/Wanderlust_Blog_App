@@ -11,7 +11,7 @@ COPY . .
 RUN npm i
 
 # Copy the .env.sample file from the current directory to .env.local inside the container
-COPY .env.sample .env.sample
+COPY .env.sample .env.local
 
 # Expose port 5173 to allow outside connections to this port
 EXPOSE 5173
